@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Banderas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+	<main class="shell">
+		<section class="hero">
+			<div>
+				<p class="eyebrow">Cual es la bandera?</p>
+				<h1>¿Adivinas la bandera?</h1>
+				<p class="lead">Mira la bandera Y elige la correcta</p>
+			</div>
+			<div class="score-card">
+				<span>Puntos totales</span>
+				<strong id="total-score">0</strong>
+				<small id="score-meta">Guardado en tu navegador</small>
+			</div>
+		</section>
+
+		<section class="game-card">
+			<div class="game-top">
+				<span id="round-label"></span>
+				<span id="status">.... banderita...</span>
+			</div>
+
+			<div class="flag-wrap">
+				<img id="flag-image" alt=" BANDERA DEL PAIIisssss" />
+			</div>
+
+			<div class="options" id="options"></div>
+
+			<div class="actions">
+				<button id="next-button" type="button" disabled>Siguiente bandera</button>
+				<button id="reset-button" type="button" class="ghost">Reiniciar marcador</button>
+			</div>
+
+			<p class="hint" id="hint">Cada acierto suma 6 o 7 puntos. "(mentira suma 10)"</p>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
