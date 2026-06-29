@@ -98,7 +98,7 @@ function buildRound() {
 		setStatus('No hay suficientes países para jugar', 'danger');
 		return;
 	}
-	 //busca todos los paises randoms y despues muestra uno correcto a la bandera que se mostro, muestra que su re god grande copilot te amo
+	 //busca todos los paises randoms y despues muestra uno correcto a la bandera que se mostro
 	state.locked = false;
 	nextButton.disabled = true;
 	state.currentCountry = state.countries[Math.floor(Math.random() * state.countries.length)];
