@@ -48,7 +48,7 @@ async function fetchCountries() {
 }
 // elige al azar
 function sample(array, amount) {
-	return [...array].sort(() => Math.random() - 1).slice(0, amount);
+	return [...array].sort(() => Math.random() - 0.5).slice(0, amount);
 }
 
 function setStatus(message, tone = 'neutral') {
