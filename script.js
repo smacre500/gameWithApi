@@ -102,7 +102,7 @@ function buildRound() {
 	state.locked = false;
 	nextButton.disabled = true;
 	state.currentCountry = state.countries[Math.floor(Math.random() * state.countries.length)];
-	const options = sample(state.countries.filter((country) => country.code !== state.currentCountry.code), 3);
+	const options = sample(state.countries.filter((country) => country.code !== state.currentCountry.code), 7);
 	options.push(state.currentCountry);
 	options.sort(() => Math.random() - 0.5); //para que salga en un lugar random
 	//muestra la bandera y suma las rondas y eso
